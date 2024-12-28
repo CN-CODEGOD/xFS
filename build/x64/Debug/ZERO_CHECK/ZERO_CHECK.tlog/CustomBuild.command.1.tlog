@@ -1,0 +1,10 @@
+^C:\USERS\ADMINNISTRATOR\DEMO\XFS\XFS-PROJECT\BUILD\CMAKEFILES\73B23CCE71D87930E9D80ED7054271E0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Adminnistrator/demo/xFS/xfs-project -BC:/Users/Adminnistrator/demo/xFS/xfs-project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Adminnistrator/demo/xFS/xfs-project/build/XFSProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

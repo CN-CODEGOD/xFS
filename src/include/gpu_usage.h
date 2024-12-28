@@ -1,0 +1,2 @@
+void displayGpuUsage();
+float getGpuUsage();
